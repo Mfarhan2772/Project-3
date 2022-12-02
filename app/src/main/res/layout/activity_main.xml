@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setup_phone"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    android:background="@color/gray" >
+
+    <View
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="70dp"
+        android:gravity="top"
+        android:text="CALCULATOR "
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/back"
+        android:layout_width="371dp"
+        android:layout_height="128dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/edt" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="356dp"
+        android:layout_height="131dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="111dp"
+        android:ems="10"
+        android:gravity="right|center"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="30pt" />
+
+
+    <ImageButton
+        android:id="@+id/buAC"
+        android:onClick="acEvent"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/ac" />
+
+    <ImageButton
+        android:id="@+id/buPlusMius"
+        android:onClick="numberEvent"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/mipu" />
+
+    <ImageButton
+        android:id="@+id/buPercent"
+        android:onClick="percentEvent"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/persen" />
+
+    <ImageButton
+        android:id="@+id/buDivide"
+        android:onClick="operatorEvent"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="291dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/bagi" />
+
+    <ImageButton
+        android:id="@+id/buMultiply"
+        android:onClick="operatorEvent"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="291dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="348dp"
+        android:background="@drawable/kali" />
+
+    <ImageButton
+        android:id="@+id/buMinus"
+        android:onClick="operatorEvent"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="425dp"
+        android:background="@drawable/kurang" />
+
+    <ImageButton
+        android:id="@+id/buPlus"
+        android:onClick="operatorEvent"
+        android:layout_width="80dp"
+        android:layout_height="146dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="290dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="503dp"
+        android:background="@drawable/tambah" />
+
+    <ImageButton
+        android:id="@+id/bu0"
+        android:onClick="numberEvent"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="579dp"
+        android:background="@drawable/noll" />
+
+    <ImageButton
+        android:id="@+id/buDot"
+        android:onClick="numberEvent"
+        android:layout_width="82dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="111dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="579dp"
+        android:background="@drawable/titik" />
+
+    <ImageButton
+        android:id="@+id/buEqual"
+        android:onClick="equalEvent"
+        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="201dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="579dp"
+        android:background="@drawable/sama" />
+
+    <ImageButton
+        android:id="@+id/bu1"
+        android:onClick="numberEvent"
+        android:layout_width="80dp"
+        android:layout_height="67dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="503dp"
+        android:background="@drawable/satu" />
+
+    <ImageButton
+        android:id="@+id/bu2"
+        android:onClick="numberEvent"        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="111dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="503dp"
+        android:background="@drawable/dua" />
+
+    <ImageButton
+        android:id="@+id/bu3"
+        android:onClick="numberEvent"        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="202dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="503dp"
+        android:background="@drawable/tiga" />
+
+    <ImageButton
+        android:id="@+id/bu4"
+        android:onClick="numberEvent"        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="425dp"
+        android:background="@drawable/empat"
+        />
+
+    <ImageButton
+        android:id="@+id/bu5"
+        android:onClick="numberEvent"        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="425dp"
+        android:background="@drawable/lima" />
+
+    <ImageButton
+        android:id="@+id/bu6"
+        android:onClick="numberEvent"        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="425dp"
+        android:background="@drawable/enam" />
+
+    <ImageButton
+        android:id="@+id/bu7"
+        android:onClick="numberEvent"        android:layout_width="80dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="348dp"
+        android:background="@drawable/tuju" />
+
+    <ImageButton
+        android:id="@+id/bu8"
+        android:onClick="numberEvent"        android:layout_width="79dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="348dp"
+        android:background="@drawable/delapan" />
+
+    <ImageButton
+        android:id="@+id/bu9"
+        android:onClick="numberEvent"        android:layout_width="82dp"
+        android:layout_height="68dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="348dp"
+        android:background="@drawable/sembilan" />
+
+</RelativeLayout>
